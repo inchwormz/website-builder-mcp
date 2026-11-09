@@ -1,6 +1,8 @@
-# iter0 MCP
+# Website builder MCP server for Claude Code, Codex and ChatGPT
 
-Connect an AI agent such as Claude Code, Cursor or Codex to [iter0](https://iter0.com), an AI website builder for tech founders. Through MCP, the agent can:
+This is the MCP server for [iter0](https://iter0.com), an AI website builder for founders. Add it to Claude Code, Codex or ChatGPT and your agent can build a website from a short brief, edit a saved page and publish it to a free `name.iter0.app` address, all from the chat you already use. The server runs at iter0.com, so you connect to one address instead of hosting anything yourself.
+
+Through MCP, the agent can:
 
 - build a launch website from a brief or from a reference site you are allowed to use;
 - make one focused edit to a saved page;
@@ -45,6 +47,8 @@ Codex (`~/.codex/config.toml`):
 [mcp_servers.iter0]
 url = "https://iter0.com/api/mcp"
 ```
+
+ChatGPT: add iter0 as a connector with the endpoint above, then sign in to your iter0 account when ChatGPT asks. The setup page has the current steps.
 
 If your client needs a different format, use its own steps for adding a Streamable HTTP server, and give it the endpoint above.
 
@@ -122,7 +126,7 @@ To push a build from your computer, install the local server (commands at <https
 
 ## Official MCP Registry
 
-[`server.json`](server.json) describes the remote server for the official MCP Registry, under the name `io.github.inchwormz/iter0-mcp`.
+[`server.json`](server.json) describes the remote server for the official MCP Registry, under the name `io.github.inchwormz/iter0-mcp`. That name was registered before this repository was renamed from `iter0-mcp`, and it stays the same.
 
 ## Limits
 
